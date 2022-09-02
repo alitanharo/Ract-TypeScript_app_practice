@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, Dispatch, SetStateAction, FC } from 'react';
 import "./assets/style.css"
 import List from "./components/List";
-import "./assets/2.jpg"
+
 import AddPeople from './components/AddPeople';
 
 
@@ -12,10 +12,11 @@ import AddPeople from './components/AddPeople';
     name: string;
     age: number;
     info: string;
-    imgUrl: string;
+    imgUrl: string | undefined;
 
 
 }
+
 
 
 
@@ -31,7 +32,7 @@ const [peoples,SetPeaples]=useState<Ipeoples[]>([{
   name:"Pofen",
   age:3,
   info:"Pofen is a dog",
-  imgUrl:"src/assets/2.jpg"
+  imgUrl:""
 }])
 
 
